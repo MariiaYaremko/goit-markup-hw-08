@@ -1,0 +1,77 @@
+.cards {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+&__item {
+  width: calc ((100%-60)/3);
+  height: 404px;
+  margin-top: 30px;
+  margin-right: 27px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-cards-color);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__top {
+  position: relative;
+  overflow: hidden;
+}
+}
+.hower-overlay {
+  position: absolute;
+  top: 0px;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  transform: translateY(102%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hower-overlay__inform {
+  position: absolute;
+  width: 322px;
+  height: 168px;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.cards__bottom {
+  padding-left: 24px;
+}
+.cards__bottom .text {
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+.cards__item {
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+.cards__item {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transform: translateY(0);
+  }
+  &:hover .hower-overlay {
+    transform: translateY(0);
+  }
+}

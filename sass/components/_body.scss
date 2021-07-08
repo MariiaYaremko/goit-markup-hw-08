@@ -1,0 +1,13 @@
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .site-nav__item {
+    position: relative;
+    text-decoration: none;
+    margin-right: 50px;
+  }

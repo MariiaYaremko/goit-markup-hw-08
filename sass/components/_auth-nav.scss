@@ -1,0 +1,51 @@
+.auth-nav {
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+  
+  &__link {
+    color: var(--secondary-text-color);
+    font-style: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  &__item {
+    margin-left: 50px;
+  }
+  &__ico {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+  .auth-nav__item {
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+  .auth-nav__link {
+  &:hover, &:focus {
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  &:hover .auth-nav__ico, &:focus .auth-nav__ico {
+    fill: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  }
+}
+  // .auth-nav__link:hover .auth-nav__ico,
+  // .auth-nav__link:focus .auth-nav__ico {
+  //   fill: var(--accent-color);
+  //   transition-property: color;
+  //   transition-duration: 250ms;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)}

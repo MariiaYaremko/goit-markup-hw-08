@@ -1,0 +1,24 @@
+.section {
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+.hidden {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
