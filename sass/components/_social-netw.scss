@@ -3,7 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  text-align: center;
   margin-top: 16px;
+  width: 206px;
+  // margin-left: 32px;
 
   &__item {
     display: flex;
