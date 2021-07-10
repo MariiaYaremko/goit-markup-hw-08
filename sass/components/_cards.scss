@@ -1,16 +1,40 @@
 .cards {
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
+  
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+@media screen and (min-width: 1200px) {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
 &__item {
-  width: calc ((100%-60)/3);
-  height: 404px;
   margin-top: 30px;
-  margin-right: 27px;
+  height: 404px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+   display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: space-between ;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    // width: calc ((100%-60)/3);
+    margin-right: 0px;
+  }
+  margin-top: 30px;
+  // margin-right: 27px;
   margin-bottom: 0px;
   margin-left: 0px;
   padding-left: 0px;
@@ -23,6 +47,18 @@
 &__top {
   position: relative;
   overflow: hidden;
+  height: 294px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+   
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+
 }
 }
 .hower-overlay {
@@ -30,6 +66,16 @@
   top: 0px;
   width: 370px;
   height: 294px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+   
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
   background: rgba(33, 150, 243, 0.9);
   padding-top: 63px;
   padding-right: 24px;
