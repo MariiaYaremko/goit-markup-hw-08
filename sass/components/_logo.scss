@@ -1,18 +1,25 @@
 .logo {
+
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-style: 400;
     font-size: 24px;
     line-height: 1.19;
     text-decoration: none;
-    width: 145px;
-    height: 31px;
+    width: 134px;
+    height: 28px;
+    
+    // letter-spacing: 0.03em;
     // display: flex;
     // align-items: center;
     // text-align: center;
+
   
   @media screen and (min-width: 1200px) {
     font-size: 26px;
+    width: 145px;
+    height: 31px;
+    font-weight: 400;
     }
   }
   .logo-web {

@@ -1,6 +1,8 @@
 .auth-nav {
-  display: none;
-    // display: flex;
+      @media screen and (max-width: 767px) {
+  display: none;}
+  
+    display: flex;
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: auto;

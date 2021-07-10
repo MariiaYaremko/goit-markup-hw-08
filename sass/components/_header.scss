@@ -11,6 +11,9 @@
 //   height: 80px;
 //   display: flex;
 //   align-items: center;
+.main-nav {
+    padding-top: 16px;
+}
 // }
 .menu-open {
     position: absolute;
@@ -26,6 +29,37 @@
     &:focus {
         fill: var(--accent-color);
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+@media screen and (min-width: 480px) {
+    .main-nav {
+        padding-top: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .menu-open {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        //   align-items: center;
+    }
+    .site-nav {
+        margin-left: 48px;
+        font-size: 14px;
+        font-weight: 500px;
+    }
+    .logo {
+        margin-top: 26px;
+    }
+    .auth-nav {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 21px;
+    }
+    .auth-nav__item {
+        margin-bottom: 10px;
     }
 }
 // .header__button {
@@ -51,9 +85,32 @@
 //   display: flex;
 //   align-items: center;
 // }
+@media screen and (min-width: 1200px) {
+    .menu-open {
+        display: none;
+    }
+    .logo {
+        margin-top: 24px;
+    }
+    .main-nav {
+        display: flex;
+    }
+    .site-nav {
+        padding-left: 93px;
+    }
+    .auth-nav {
+        padding-left: 255px;
+        padding-top: 32px;
+           }
+
+}
+
 
 .mobile-nav {
-    // display: none;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
     position: absolute;
     background-color: var(--primary-bg-color);
     top: 0;
@@ -80,16 +137,15 @@
         height: 40px;
         top: 0;
         right: 0;
-           margin-top: 10;
-           margin-right: 15;
-           background: #ffffff;
-           border: #ffffff;
-           &:hover,
-           &:focus {
-               fill: var(--accent-color);
-               transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-           }
-
+        margin-top: 10;
+        margin-right: 15;
+        background: #ffffff;
+        border: #ffffff;
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 }
 .mobile-nav.is-hidden {
