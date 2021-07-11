@@ -67,11 +67,7 @@ p li ul h1 h2 h3 {
 
 .main-nav {
   padding-top: 16px;
-}
-@media screen and (width: 480px) {
-  .main-nav {
-    padding-bottom: 16px;
-  }
+  padding-bottom: 16px;
 }
 
 .menu-open {
@@ -102,6 +98,7 @@ p li ul h1 h2 h3 {
 
   .main-nav {
     display: flex;
+    padding-bottom: 0px;
   }
 
   .site-nav {
@@ -135,6 +132,7 @@ p li ul h1 h2 h3 {
 
   .main-nav {
     display: flex;
+    padding-bottom: 0px;
   }
 
   .site-nav {
