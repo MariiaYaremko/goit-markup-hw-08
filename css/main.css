@@ -831,6 +831,11 @@ p li ul h1 h2 h3 {
   margin-top: 0px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 479px) {
+  .clients__item {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients__item {
     margin-bottom: 0px;
